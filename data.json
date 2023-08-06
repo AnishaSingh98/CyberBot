@@ -1,0 +1,161 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "dnat",
+         "patterns": ["What is DNAT policy in your organizations security policy", "Explain DNAT policy", "What does DNAT policy do", "What is the use of dnat policy"],
+         "responses": ["DNAT rules implicitly add a corresponding network rule to allow the translated traffic. For security reasons, the recommended approach is to add a specific Internet source to allow DNAT access to the network and avoid using wildcards."],
+         "context": [""]
+        },
+        {
+      "tag": "firewall",
+      "patterns": [
+        "What is a firewall?"
+      ],
+      "responses": [
+        "A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on predetermined security rules."
+      ],
+      "context": []
+    },
+    {
+      "tag": "malware_protection",
+      "patterns": [
+        "How can I protect my computer from malware?"
+      ],
+      "responses": [
+        "To protect your computer from malware, you should keep your operating system and applications up to date, use a reliable antivirus program, avoid clicking on suspicious links or downloading files from untrusted sources, and regularly backup your important data."
+      ],
+      "context": []
+    },
+    {
+      "tag": "two_factor_authentication",
+      "patterns": [
+        "What is two-factor authentication?"
+      ],
+      "responses": [
+        "Two-factor authentication (2FA) is an extra layer of security that requires users to provide two different forms of identification to access an account or system. It typically combines something the user knows (e.g., a password) with something the user possesses (e.g., a unique code sent to their mobile device)."
+      ],
+      "context": []
+    },
+    {
+      "tag": "strong_password",
+      "patterns": [
+        "How can I create a strong password?"
+      ],
+      "responses": [
+        "To create a strong password, you should use a combination of uppercase and lowercase letters, numbers, and special characters. Avoid using easily guessable information such as your name or birthdate. It's also important to use a unique password for each of your online accounts."
+      ],
+      "context": []
+    },
+    {
+      "tag": "phishing_attack",
+      "patterns": [
+        "What is a phishing attack?"
+      ],
+      "responses": [
+        "A phishing attack is a type of cyber attack where attackers try to trick individuals into revealing sensitive information, such as passwords or credit card details, by impersonating a trustworthy entity. Phishing attacks often occur through deceptive emails, messages, or websites."
+      ],
+      "context": []
+    },
+    {
+      "tag": "phishing_identification",
+      "patterns": [
+        "How can I identify a phishing email?"
+      ],
+      "responses": [
+        "There are several signs that can help you identify a phishing email. Look for suspicious email addresses, grammatical errors, urgent or threatening language, requests for personal information, and mismatched URLs. Be cautious when clicking on links or downloading attachments from unknown sources."
+      ],
+      "context": []
+    },
+    {
+      "tag": "phishing_response",
+      "patterns": [
+        "What should I do if I receive a phishing email?"
+      ],
+      "responses": [
+        "If you receive a phishing email, do not click on any links or download any attachments. Report the email as spam or phishing to your email provider. If you have already clicked on a suspicious link or provided sensitive information, immediately change your passwords and monitor your accounts for any unauthorized activity."
+      ],
+      "context": []
+    },
+    {
+      "tag": "phishing_protection",
+      "patterns": [
+        "How can I protect myself from phishing attacks?"
+      ],
+      "responses": [
+        "To protect yourself from phishing attacks, be cautious when sharing personal information online, use strong and unique passwords for your accounts, enable two-factor authentication whenever possible, keep your devices and software up to date, and regularly educate yourself about the latest phishing techniques."
+      ],
+      "context": []
+    },
+    {
+      "tag": "security_news",
+      "patterns": [
+       "Any security news?",
+       "Tell me about the latest security updates.",
+       "What are the recent cybersecurity news?"
+     ],
+     "responses": [
+       "Certainly! Here are some recent cybersecurity incident articles:\n\n1. [SolarWinds Supply Chain Attack](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html) - Learn about the massive supply chain attack that impacted multiple organizations worldwide.\n2. [Colonial Pipeline Ransomware Attack](https://www.techtarget.com/whatis/feature/Colonial-Pipeline-hack-explained-Everything-you-need-to-know) - Read about the ransomware attack on Colonial Pipeline, which caused disruptions to fuel supplies.\n3. [Microsoft Exchange Server Hafnium Attack](https://www.cybersecurity-insights.com/microsoft-exchange-server-hafnium-attack) - Discover the details of the Hafnium attack targeting Microsoft Exchange Server vulnerabilities.\n2. [JBS Foods Cyberattack](https://www.cybersecurity-insights.com/jbs-foods-cyberattack) - Learn about the ransomware attack on JBS Foods, one of the world's largest meat processors, which disrupted its operations.\n3. [Kaseya Supply Chain Attack](https://www.cybersecurity-insights.com/kaseya-supply-chain-attack) - Read about the supply chain attack targeting Kaseya's software, which resulted in a widespread ransomware campaign.\n4. [PrintNightmare Vulnerability Exploits](https://www.cybersecurity-insights.com/printnightmare-vulnerability-exploits) - Discover the details of the PrintNightmare vulnerability that affected Windows Print Spooler service and led to remote code execution."
+  ],
+  "context": []
+},
+       {
+          "tag": "secure_software_recommendations",
+          "patterns": [
+          "Can you recommend secure software for securing pc,password storage and encryption?",
+    "What are some secure software options for security,password storage and encryption?",
+    "I need secure software for security,encryption and password storage, any recommendations?"
+  ],
+  "responses": [
+    "Certainly! Here are some secure software recommendations for daily life security:\n\n1. [Malwarebytes](https://www.malwarebytes.com) - A powerful antivirus and anti-malware solution that offers comprehensive protection against a wide range of threats.\n2. [Signal](https://www.signal.org) - A highly secure messaging app that encrypts your messages, voice calls, and video calls to ensure privacy.\n3. [LastPass](https://www.lastpass.com) - A reliable password manager that securely stores your passwords and helps you generate strong, unique passwords for each of your accounts."
+  ],
+  "context": []
+},
+{
+  "tag": "security_training_resources",
+  "patterns": [
+    "Can you recommend security training resources?",
+    "What are some good security training materials?",
+    "Where can I find security training courses?"
+  ],
+  "responses": [
+    "Sure! Here are some security training resources you can explore:\n\n1. [Cybrary](https://www.cybrary.it) - An online platform offering a wide range of cybersecurity courses, including ethical hacking, network security, and incident response.\n2. [SANS Institute](https://www.sans.org) - A leading organization in cybersecurity training, offering in-depth courses and certifications on various security topics.\n3. [OWASP](https://www.owasp.org) - The Open Web Application Security Project provides free resources, tools, and training materials to enhance web application security."
+  ],
+  "context": []
+},
+       {
+  "tag": "incident_response_guidance",
+  "patterns": [
+    "What should I do in the event of a cybersecurity incident?",
+    "How do I respond to a security breach?",
+    "Can you provide incident response guidance?"
+  ],
+  "responses": [
+    "Certainly! Here's a general incident response guidance:\n\n1. **Containment**: Immediately isolate affected systems or networks to prevent further damage.\n2. **Assessment**: Determine the scope and impact of the incident by conducting a thorough investigation.\n3. **Notification**: Inform the appropriate stakeholders, including management, IT team, and possibly law enforcement, depending on the severity.\n4. **Mitigation**: Implement measures to minimize the impact and restore normal operations.\n5. **Documentation**: Document all actions taken, including evidence collected, communication details, and remediation steps.\n6. **Post-Incident Analysis**: Conduct a post-incident analysis to identify vulnerabilities, improve security controls, and prevent future incidents.\n\nPlease note that incident response procedures can vary depending on the specific incident and organization. It's recommended to have a well-defined incident response plan tailored to your organization's needs."
+  ],
+  "context": []
+},
+        {"tag": "policy",
+         "patterns": ["What are different security policies implemented in your organization", "Give some organizational security ploicies implemented"],
+         "responses": ["DNAT,freeradius and various departmental policies"],
+         "context": [""]
+        }
+   ]
+}

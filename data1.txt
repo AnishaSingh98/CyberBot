@@ -1,0 +1,83 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["What is DNAT policy in your organization’s security policy?", "Explain DNAT policy", "What does DNAT policy do?", "What is the use of dnat policy"],
+         "responses": ["DNAT rules implicitly add a corresponding network rule to allow the translated traffic. For security reasons, the recommended approach is to add a specific Internet source to allow DNAT access to the network and avoid using wildcards."],
+         "context": [""]
+        },
+        {"tag": "policy",
+         "patterns": ["What are different security policies implemented in your organization?", "Give some organizational security ploicies implemented"],
+         "responses": ["DNAT,free_radius and	various departmental policies"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+		{"tag": "Filename injection Path traversel",
+         "patterns": ["What is Filename injection Path traversel ?", "What is Filename injection Path traversel ?", "What does Filename injection Path traversel mean ?","Filename injection Path traversel","Explain Filename injection Path traversel ?", "Elaborate Filename injection Path traversel ?", "Can you tell me about Filename injection Path traversel ?","What do you know about Filename injection Path traversel ?","What can you tell me about Filename injection Path traversel ?","Do you have information about Filename injection Path traversel ?","I want to know about XSS Filename injection Path traversel"],
+         "responses": ["Filename injection and path traversal are two separate security vulnerabilities, but they can be related to each other in certain contexts.Filename injection is a type of attack where an attacker manipulates the input to a program or system in order to inject malicious content into a filename or path.Path traversal, on the other hand, is a type of attack where an attacker exploits a vulnerability in a program or system to access files or directories outside of the intended file system.Filename injection and path traversal can be related when an attacker uses filename injection to manipulate the path used to access files or directories, allowing them to traverse the file system and access sensitive data. "],
+         "context": [""]
+        },
+		{"tag": "xss injection",
+         "patterns": ["What is xss injection ?", "What does xss injection mean ?", "Tell me something about xss injection ?", "xss injection", "Explain xss injection ?","Elaborate xss injection ?","Can you tell me about xss injection ?","What do you know about xss injection ?","What can you tell me about xss injection ?","I want to know about XSS xss injection","Do you have information about xss injection ?"],
+         "responses": ["XSS (Cross-Site Scripting) injection is a type of security vulnerability that allows an attacker to inject malicious scripts into a web page viewed by other users.This can lead to a variety of attacks such as stealing sensitive information, hijacking user sessions, or redirecting users to malicious sites.In an XSS attack, the attacker typically injects malicious code (such as JavaScript) into a web page input field, such as a search bar or comment box. When a user views the affected page, the malicious code executes in their web browser, allowing the attacker to steal sensitive information or perform other malicious actions.There are several types of XSS attacks, including : 1) Stored XSS: In a stored XSS attack, the malicious code is stored in a database or on a server and is displayed to all users who view the affected page. 2)Reflected XSS: In a reflected XSS attack, the malicious code is sent to the server through a web form or URL parameter, and is reflected back to the user in the response. 3) DOM-based XSS: In a DOM-based XSS attack, the malicious code is injected into the Document Object Model (DOM) of a web page, rather than into the server's response."],                
+         "context": [""]
+        }		
+   ]
+}
